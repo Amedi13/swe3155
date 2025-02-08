@@ -1,0 +1,14 @@
+{% extends 'main.html %}
+
+{% block content %}
+
+<div>
+    <form metho="POST" action="">
+        {% csrf_toekn %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock content %}
+
